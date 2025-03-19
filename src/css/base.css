@@ -1,3 +1,11 @@
+/* Reset */
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -12,19 +20,25 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
+ul,
+ol {
+  list-style-type: none;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+  color: currentColor;
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 img {
@@ -33,19 +47,150 @@ img {
   height: auto;
 }
 
+/* Base */
+body {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: rgba(var(--text-color));
+  background-color: var(--white);
+}
+
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: Manrope, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 600;
+  /* Typography Styles */
+  --font-family: 'Manrope', sans-serif;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* Colors */
+  --black: #121417;
+  --green: #4DC274;
+  --green_linear: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+  --light-green: #D4FDE1;
+  --gray: #F3F5F6;
+  --white: #FFF;
+  --accent-color: #BEE8CC;
+  --text-color: rgba(18, 20, 23, 0.50);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
+  --h1-size: 60px;
+  --h1-weight: 700;
+  --h1-line-height: 1.17;
+
+}
+
+/* Common */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+/* Standard Classes */
+.hide {
+  display: none;
+}
+
+
+/* Sections + Container
+<section class="name">
+<div class="container"> */
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
+
+section {
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    padding: 75px 0;
+  }
+}
+
+.accent-title-text {
+  color: var(--accent-color);
+}
+
+/* Title Text + Highlight
+<h2 class="highlight">Our <span>lessons</span></h2> */
+.highlight {
+  color: var(--black);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight span {
+  position: relative;
+}
+
+.highlight span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  /* Регулює вертикальне положення */
+  width: 100%;
+  height: 50%;
+  /* В макеті 16px та 20px */
+  background-color: var(--accent-color);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .highlight {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+/* Logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.accent-logo {
+  color: var(--green);
 }
