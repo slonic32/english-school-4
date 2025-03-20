@@ -1,7 +1,6 @@
-.container {
+.application.container {
     text-align: center;
 }
-
 
 .highlight {
     display: block;
