@@ -1,3 +1,7 @@
+.application.container {
+    text-align: center;
+}
+
 .highlight {
     display: block;
     margin-bottom: 14px;
