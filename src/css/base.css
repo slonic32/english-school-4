@@ -53,7 +53,7 @@ img {
 body {
   font-family: var(--font-family);
   font-size: 14px;
-  color: rgba(var(--text-color));
+  color: var(--text-color);
   background-color: var(--white);
   letter-spacing: -0.02em;
 }
@@ -64,6 +64,7 @@ body {
 
   /* Colors */
   --black: #121417;
+
   --green: #4dc274;
   --green_linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   --light-green: #d4fde1;
@@ -71,6 +72,8 @@ body {
   --white: #fff;
   --accent-color: #bee8cc;
   --text-color: rgba(18, 20, 23, 0.5);
+  --secondary-text-color: rgba(255, 255, 255, 0.70);
+
 
   --h1-size: 60px;
   --h1-weight: 700;
@@ -166,10 +169,12 @@ section {
   overflow: visible;
   left: 0;
 
+
   /* Регулює вертикальне положення */
   width: 100%;
   height: 12px;
   bottom: -2px;
+
   /* В макеті 16px та 20px */
   background-color: var(--accent-color);
   z-index: -1;

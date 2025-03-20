@@ -1,1 +1,108 @@
-<section id="application"></section>
+<section class="application" id="application">
+  <div class="container">
+    <h2 class="highlight">Leave an <span>application</span></h2>
+    <p class="app-text">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="form-container">
+      <div class="form-info">
+        <div class="image-wrapper">
+          <img
+            src="/images/application/girl.png"
+            srcset="
+              /images/application/girl.png    1x,
+              /images/application/girl@2x.png 2x
+            "
+            alt="Student in online lesson"
+          />
+        </div>
+        <div class="info-wrapper">
+          <p class="info-count">1000</p>
+          <p class="info-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <form class="form-fields">
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄ'\-\s]{2,}"
+              title="Please enter at least 2 letters."
+            />
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              title="Please enter a valid email address."
+            />
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="tel"
+              placeholder="Phone"
+              name="phone"
+              pattern="^\+?[0-9\s\-]{7,15}$"
+              title="Please enter a valid phone number."
+            />
+          </div>
+          <div class="input-wrapper">
+            <textarea
+              placeholder="Comment"
+              name="comment"
+              rows="4"
+              minlength="10"
+              title="Please enter at least 10 characters."
+            ></textarea>
+          </div>
+        </div>
+
+        <fieldset class="teacher-select">
+          <legend class="teacher-legend">Choose a teacher</legend>
+
+          <div class="teacher-options">
+            <label class="teacher-label">
+              <input type="radio" name="teacher" value="maria" hidden checked />
+              <span class="teacher-radio"></span>
+              Maria
+            </label>
+            <label class="teacher-label">
+              <input type="radio" name="teacher" value="artem" hidden />
+              <span class="teacher-radio"></span>
+              Artem
+            </label>
+            <label class="teacher-label">
+              <input type="radio" name="teacher" value="ilona" hidden />
+              <span class="teacher-radio"></span>
+              Ilona
+            </label>
+            <label class="teacher-label">
+              <input type="radio" name="teacher" value="volodymyr" hidden />
+              <span class="teacher-radio"></span>
+              Volodymyr
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+
+        <p class="form-terms">
+          By clicking on “Send” button, you agree to our
+          <a href="#">Privacy Policy</a>, and allow Promodo to use this
+          information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
