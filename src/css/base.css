@@ -51,7 +51,7 @@ img {
 body {
   font-family: var(--font-family);
   font-size: 14px;
-  color: rgba(var(--text-color));
+  color: var(--text-color);
   background-color: var(--white);
 }
 
@@ -68,6 +68,7 @@ body {
   --white: #FFF;
   --accent-color: #BEE8CC;
   --text-color: rgba(18, 20, 23, 0.50);
+  --secondary-text-color: rgba(255, 255, 255, 0.70);
 
 
   --h1-size: 60px;
@@ -165,10 +166,10 @@ section {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 3px;
   /* Регулює вертикальне положення */
   width: 100%;
-  height: 50%;
+  height: 30%;
   /* В макеті 16px та 20px */
   background-color: var(--accent-color);
   z-index: -1;
