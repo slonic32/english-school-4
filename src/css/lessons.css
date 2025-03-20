@@ -1,0 +1,121 @@
+.lessons {
+}
+
+@media screen and (min-width: 1280px) {
+  .lessons .container {
+    max-width: 1024px;
+    padding: 0;
+  }
+}
+
+.lessons-header {
+  margin-bottom: 16px;
+}
+
+.lessons-text {
+  margin-bottom: 40px;
+}
+
+.lessons-list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .lessons-list {
+    gap: 32px;
+  }
+}
+
+.lessons-plan {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 16px;
+  border: 1px solid #4dc274;
+  width: 336px;
+}
+
+@media screen and (min-width: 768px) {
+  .lessons-plan {
+    padding: 32px 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lessons-plan {
+    width: 320px;
+    padding: 32px 32px;
+  }
+}
+
+.lessons-plan-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.lessons-plan-price {
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125;
+}
+
+@media screen and (min-width: 768px) {
+  .lessons-plan-price {
+    line-height: 1.375;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lessons-plan-price {
+    margin-bottom: 16px;
+  }
+}
+
+.lessons-plan-text {
+  height: 132px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .lessons-plan-text {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lessons-plan-text {
+    height: 148px;
+  }
+}
+
+.lessons-plan-button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: var(--green);
+  border-radius: 12px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.lessons-green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.lessons-green .base-grey-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lessons-green .lessons-plan-button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
