@@ -1,0 +1,130 @@
+.our-teachers {
+  display: flex;
+  margin: 0 auto 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.12;
+  color: var(--black);
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-title {
+    font-size: 40px;
+    line-height: 1.2;
+    padding-bottom: 0;
+  }
+}
+
+.teacher-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--text-color);
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-description {
+    font-size: 18px;
+    line-height: 1.67;
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher-description {
+    width: 709px;
+    margin: 0 auto 0;
+  }
+}
+
+.teacher-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 335px;
+  row-gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-list {
+    width: 704px;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher-list {
+    width: 1024px;
+    gap: 32px;
+    justify-content: space-between;
+  }
+}
+
+.teacher-item {
+  width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher-item {
+    width: calc((100% - 32px * 3) / 4);
+  }
+}
+
+.teacher-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.teachers-caption {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--black);
+  padding: 16px 0 8px 0;
+}
+
+.teachers-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .teachers-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 272px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers-desc {
+    width: 232px;
+
+  }
+}
