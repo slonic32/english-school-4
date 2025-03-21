@@ -24,6 +24,7 @@
     background: none;
     border: none;
     cursor: pointer;
+
   }
 
   .mob-menu-list {
@@ -32,6 +33,7 @@
     align-items: center;
     gap: 20px;
     margin-bottom: 200px;
+
   }
 
   .mob-menu-list li {
@@ -66,8 +68,14 @@
         fill: var(--white);
         border-color: var(--white);
       }
+
     }
   }
+
+
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -80,6 +88,7 @@
 @media (min-width: 1280px) {
   .mob-menu {
     display: none;
+
   }
 }
 
@@ -92,7 +101,6 @@
   height: 100%;
   z-index: 999;
   background: rgba(0, 0, 0, 0.5);
-  display: none;
 }
 
 .drop.is-closed {
@@ -105,4 +113,6 @@
 
 .mob-menu.is-closed {
   transform: scale(0);
+
+
 }
