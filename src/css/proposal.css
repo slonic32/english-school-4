@@ -1,0 +1,219 @@
+.proposal {
+  padding: 80px 20px 0;
+}
+.proposal-container {
+  background: var(--green_linear);
+  border-radius: 16px;
+  padding: 40px 20px 64px 20px;
+  max-width: 335px;
+  min-width: 280px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+    padding-bottom: 93px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1152px;
+    padding: 64px;
+    padding-bottom: 142px;
+  }
+}
+.proposal-title {
+  color: var(--white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 65px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 1.16;
+    margin-bottom: 83px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 133px;
+    max-width: 776px;
+  }
+}
+.proposal-text {
+  color: var(--accent-color);
+}
+.proposal-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    padding: 64px 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 64px;
+  }
+}
+
+.proposal-card-wrapper {
+  position: relative;
+}
+.proposal-card-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 295px;
+  max-height: 408px;
+  transform: rotate(-9deg);
+  border-radius: 16px;
+  background: var(--light-green);
+
+  @media screen and (min-width: 768px) {
+    max-width: 668px;
+    max-height: 500px;
+    transform: rotate(-9.864deg);
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1050px;
+    max-height: 463px;
+    transform: rotate(-8deg);
+    left: -25px;
+  }
+}
+.proposal-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 295px;
+  max-height: 408px;
+  transform: rotate(11deg);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -2;
+
+  @media screen and (min-width: 768px) {
+    max-width: 668px;
+    max-height: 500px;
+    transform: rotate(10.655deg);
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1011px;
+    max-height: 402px;
+    transform: rotate(11deg);
+    top: 30px;
+  }
+}
+.proposal-subtitle {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 40px;
+  }
+}
+.proposal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+  /* list-style-image: url('/images/icons.svg#icon-check'); */
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.proposal-item {
+  display: flex;
+  align-items: center;
+}
+
+.proposal-icon {
+  flex-shrink: 0;
+  margin-right: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+    width: 28px;
+    height: 28px;
+  }
+}
+/* .proposal-item-text::before {
+  background-image: url('/images/icons.svg#icon-check');
+} */
+.proposal-item-text {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+
+  @media screen and (min-width: 768px) {
+    max-width: 405px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    max-width: 610px;
+  }
+}
+.cta-button {
+  display: block;
+  max-width: 255px;
+  padding: 14px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  transition: background-color 0.3s ease;
+
+  @media screen and (min-width: 768px) {
+    max-width: 306px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+.cta-button:hover,
+.cta-button:active {
+  background-color: #38ae5f;
+}
+.proposal-image {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 174px;
+    right: -48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 129px;
+    right: 0;
+  }
+}
