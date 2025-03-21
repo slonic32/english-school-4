@@ -118,7 +118,12 @@ h1.hhero span{
     }
 
     .hero-container{
+        max-width: 100%;
+        width: calc(100% - 40px);
+        margin: 0 auto;
         padding: 0 20px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
 
@@ -130,7 +135,10 @@ h1.hhero span{
 
 
     .btn-hero{
-        width: 100%;
+        max-width: 100%;
+        width: auto;
+        display: block;
+        text-align: center;
         height: 52px;
         font-size: 14px;
         border-radius: 12px;
