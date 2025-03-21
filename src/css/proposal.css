@@ -6,6 +6,7 @@
   border-radius: 16px;
   padding: 40px 20px 64px 20px;
   max-width: 335px;
+  min-width: 280px;
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
@@ -62,22 +63,24 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 295px;
-  height: 408px;
+  width: 100%;
+  height: 100%;
+  max-width: 295px;
+  max-height: 408px;
   transform: rotate(-9deg);
   border-radius: 16px;
   background: var(--light-green);
 
   @media screen and (min-width: 768px) {
-    width: 668px;
-    height: 500px;
+    max-width: 668px;
+    max-height: 500px;
     transform: rotate(-9.864deg);
     border-radius: 30px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1050px;
-    height: 463px;
+    max-width: 1050px;
+    max-height: 463px;
     transform: rotate(-8deg);
     left: -25px;
   }
@@ -87,23 +90,25 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 295px;
-  height: 408px;
+  width: 100%;
+  height: 100%;
+  max-width: 295px;
+  max-height: 408px;
   transform: rotate(11deg);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.5);
   z-index: -2;
 
   @media screen and (min-width: 768px) {
-    width: 668px;
-    height: 500px;
+    max-width: 668px;
+    max-height: 500px;
     transform: rotate(10.655deg);
     border-radius: 30px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1011px;
-    height: 402px;
+    max-width: 1011px;
+    max-height: 402px;
     transform: rotate(11deg);
     top: 30px;
   }
@@ -146,6 +151,8 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 16px;
+    width: 28px;
+    height: 28px;
   }
 }
 /* .proposal-item-text::before {
@@ -171,8 +178,9 @@
 }
 .cta-button {
   display: block;
-  width: 255px;
-  padding: 14px 58px;
+  max-width: 255px;
+  padding: 14px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   border: none;
@@ -182,11 +190,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
-  width: 255px;
   transition: background-color 0.3s ease;
 
   @media screen and (min-width: 768px) {
-    width: 306px;
+    max-width: 306px;
     font-size: 18px;
     line-height: 1.56;
   }
@@ -208,11 +215,5 @@
   @media screen and (min-width: 1280px) {
     top: 129px;
     right: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .proposal-icon {
-    width: 28px;
-    height: 28px;
   }
 }
