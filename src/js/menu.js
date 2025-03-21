@@ -12,3 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 })
+
+// !!!!!!!!no-scroll не провтикать додать
