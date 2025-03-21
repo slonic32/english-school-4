@@ -1,7 +1,7 @@
 .hero-section {
     font-family: "Manrope", sans-serif;
     padding: 164px 0;
-    background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%), url(../images/hero-section-bg.jpg);
+    background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%), url(../images/hero/desc@2x.jpg);
     background-position: center;
     max-width: 1152px;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ h1.hhero span{
 @media screen and (max-width: 1151px){
     .hero-section {
         padding: 260px 0 295px;
-        background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%), url(../images/hero-section-bg-tablet.jpg);
+        background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%), url(../images/hero/tab@2x.jpg);
         max-width: calc(100% - 64px);
     }
 
@@ -94,7 +94,7 @@ h1.hhero span{
 @media screen and (max-width: 767px){
     .hero-section {
         padding: 425px 0 72px;
-        background-image: linear-gradient(357.37deg, rgba(0, 0, 0, 0.4) 39.23%, rgba(0, 0, 0, 0) 66.28%), url(../images/hero-section-bg-mobile.jpg);
+        background-image: linear-gradient(357.37deg, rgba(0, 0, 0, 0.4) 39.23%, rgba(0, 0, 0, 0) 66.28%), url(../images/hero/mob@2x.jpg);
         max-width: calc(100% - 40px);
         border-radius: 16px;
     }
