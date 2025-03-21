@@ -97,7 +97,7 @@ footer {
 .footer-social-svg {
     width: 28px;
     height: 28px;
-    fill: var(--white);
+    fill: #fff;
     opacity: 0.8;
 }
 
@@ -129,7 +129,7 @@ footer {
     padding-top: 23px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .footer-container {
         padding: 32px 32px 110px;
     }
