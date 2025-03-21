@@ -77,11 +77,7 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .mob-menu {
-    display: none;
-  }
-}
+
 
 .drop {
   display: flex;
@@ -105,4 +101,14 @@
 
 .mob-menu.is-closed {
   transform: scale(0);
+}
+
+@media (min-width: 1280px) {
+  .mob-menu {
+    display: none;
+  }
+
+  .drop {
+    display: none;
+  }
 }
