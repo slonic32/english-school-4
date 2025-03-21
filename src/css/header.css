@@ -81,3 +81,45 @@
   fill: var(--green);
   border-color: rgba(77, 194, 116, 0.1);
 }
+
+.menu-toggle {
+  position: absolute;
+  z-index: 999;
+  top: 18px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+
+  fill: var(--black);
+  border: none;
+
+  transition: transform 300ms ease-in-out;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  transform: scale(1.1);
+}
+
+.nav-button {
+  cursor: pointer;
+  fill: var(--black);
+  stroke: var(--black);
+}
+
+@media screen and (max-width: 1279px) {
+  .socials-header {
+    display: none;
+  }
+  .page-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+}
