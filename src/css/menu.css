@@ -87,22 +87,17 @@
   width: 100%;
   height: 100%;
   z-index: 999;
- /* background: rgba(0, 0, 0, 0.5); */
-  display: none;
+  background: rgba(0, 0, 0, 0.5);
 
 }
 
-.drop.is-closed {
-  display: none;
-}
+
 
 .mob-menu.is-opened {
   transform: scale(1);
 }
 
-.mob-menu.is-closed {
-  transform: scale(0);
-}
+
 
 @media (min-width: 1280px) {
   .mob-menu {
@@ -112,4 +107,14 @@
   .drop {
     display: none;
   }
+}
+
+
+.drop.is-opened {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
