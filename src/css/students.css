@@ -85,9 +85,8 @@
   .feedback-description {
     font-size: 18px;
 
-    max-width: 647px;
+    max-width: 646px;
     margin: 0 auto 64px;
-
   }
 
 
@@ -99,7 +98,4 @@
     min-width: 320px;
 
   }
-
-
-
 }
