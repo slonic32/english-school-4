@@ -1,5 +1,4 @@
-.lessons {
-}
+.lessons {}
 
 @media screen and (min-width: 1280px) {
   .lessons .container {
@@ -111,6 +110,7 @@
 .lessons-plan-button:focus {
   background-color: #38ae5f;
 }
+
 /*
 .lessons-green {
   background-color: var(--green);
