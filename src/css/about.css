@@ -96,9 +96,13 @@ p {
     position: relative;
     background: var(--gray);
     padding: 32px;
-    border-radius: 10px;
+    border-radius: 16px;
     text-align: center;
     height: 160px;
+
+    @media (min-width: 758px) {
+        border-radius: 30px;
+    }
 }
 
 .text-card {
@@ -112,7 +116,11 @@ p {
 
 .card {
     background-color: var(--gray);
-    border-radius: 30px;
+    border-radius: 16px;
+
+    @media (min-width: 768px) {
+        border-radius: 30px;
+    }
 }
 
 .card-number {
@@ -132,9 +140,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 16px;
     box-sizing: border-box;
     height: 323px;
+
+    @media (min-width: 768px) {
+        border-radius: 30px;
+    }
 }
 
 .grid-about {
@@ -142,10 +154,6 @@ p {
 }
 
 @media (min-width: 768px) {
-
-    .card-about {
-        border-radius: 30px;
-    }
 
     .container.about {
         margin: 0 32px;
