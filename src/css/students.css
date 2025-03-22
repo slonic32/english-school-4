@@ -1,31 +1,32 @@
 .section-students {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .feedback-title {
-  margin-bottom: 16px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 36px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
 
 }
 
 .feedback-description {
-  font-size: 14px;
-  text-align: center;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
 }
 
 .feedbacks-scroll {
-  display: flex;
-  overflow-x: auto;
+    display: flex;
+    overflow-x: auto;
 
 }
 
 .feedbacks-list {
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -36,38 +37,47 @@
   min-width: 335px;
   border-radius: 16px;
   background: #F3F5F6;
+=======
+    display: flex;
+    flex-direction: row;
+}
+
+.feedback-card {
+    padding: 20px;
+    min-width: 335px;
+>>>>>>> main
 }
 
 .feedback-student-header {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  margin-bottom: 16px;
-  background: var(--green);
-  padding: 14px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 16px;
+    background: var(--green);
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .student-name {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -0.4px;
-  line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.4px;
+    line-height: 24px;
 }
 
 .student-role {
-  font-size: 12px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 16px;
 }
 
 .feedback-text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 
 }
 

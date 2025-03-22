@@ -225,16 +225,16 @@
 }
 
 /* змінюємо рамку та показуємо точку, якщо обрано */
-.teacher-label input[type='radio']:checked + .teacher-radio {
+.teacher-label input[type='radio']:checked+.teacher-radio {
   border: 2px solid var(--green);
 }
 
-.teacher-label input[type='radio']:checked + .teacher-radio::before {
+.teacher-label input[type='radio']:checked+.teacher-radio::before {
   opacity: 1;
 }
 
 /* фокус (доступність з клавіатури) */
-.teacher-label input[type='radio']:focus-visible + .teacher-radio {
+.teacher-label input[type='radio']:focus-visible+.teacher-radio {
   box-shadow: 0 0 0 4px rgba(77, 194, 116, 0.25);
 }
 

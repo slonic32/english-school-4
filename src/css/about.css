@@ -15,20 +15,20 @@ p {
 .about-us-highlight {
     display: inline-block;
     position: relative;
-  }
-  
-  .about-us-highlight-text {
+}
+
+.about-us-highlight-text {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -2%;
     text-align: center;
-  
+
     position: relative;
     z-index: 2;
-  }
-  
-  .about-us-highlight-box {
+}
+
+.about-us-highlight-box {
     position: absolute;
     top: 31px;
     left: -7px;
@@ -37,9 +37,9 @@ p {
     background-color: var(--accent-color);
     border-radius: 8px;
     z-index: 1;
-  }
+}
 
-  .about-us-subtitle {
+.about-us-subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -81,8 +81,8 @@ p {
     @media (min-width: 1280px) {
         width: 81%;
         margin-left: auto;
-         margin-right: auto;
-    
+        margin-right: auto;
+
     }
 }
 
@@ -107,8 +107,8 @@ p {
     line-height: 24px;
     letter-spacing: -2%;
     text-align: left;
-    color:  var(--black);
-    }
+    color: var(--black);
+}
 
 .card {
     background-color: var(--gray);
@@ -149,7 +149,7 @@ p {
 
     .container.about {
         margin: 0 32px;
-    }    
+    }
 
     .grid-about {
         grid-template-columns: repeat(2, 1fr);
@@ -157,11 +157,31 @@ p {
         gap: 32px;
     }
 
-    .card1 { grid-column: 1; grid-row: 1; }
-    .card2 { grid-column: 2; grid-row: 1; }
-    .card3 { grid-column: 1; grid-row: 2; }
-    .card4 { grid-column: 2; grid-row: 2; }
-    .card5 { grid-column: span 2; grid-row: 3; height: 243px; }
+    .card1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .card2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .card3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card5 {
+        grid-column: span 2;
+        grid-row: 3;
+        height: 243px;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -179,10 +199,28 @@ p {
         grid-template-rows: repeat(2, auto);
     }
 
-    .card1 { grid-column: 1; grid-row: 1; }
-    .card2 { grid-column: 2; grid-row: 1; }
-    .card3 { grid-column: 1; grid-row: 2; }
-    .card4 { grid-column: 2; grid-row: 2; }
-    .card5 { grid-column: 3; grid-row: span 2;
+    .card1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .card2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .card3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card5 {
+        grid-column: 3;
+        grid-row: span 2;
     }
 }
