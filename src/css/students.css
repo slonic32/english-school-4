@@ -26,6 +26,18 @@
 }
 
 .feedbacks-list {
+<<<<<<< HEAD
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.feedback-card {
+  padding: 20px;
+  min-width: 335px;
+  border-radius: 16px;
+  background: #F3F5F6;
+=======
     display: flex;
     flex-direction: row;
 }
@@ -33,6 +45,7 @@
 .feedback-card {
     padding: 20px;
     min-width: 335px;
+>>>>>>> main
 }
 
 .feedback-student-header {
@@ -66,4 +79,33 @@
     font-weight: 400;
     line-height: 24px;
 
+}
+
+
+@media screen and (min-width: 768px) {
+  .feedback-card {
+    min-width: 335px;
+  }
+
+  .feedbacks-list {
+
+    gap: 32px;
+  }
+
+  .feedback-description {
+    font-size: 18px;
+
+    max-width: 646px;
+    margin: 0 auto 64px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1280px) {
+  .feedback-card {
+    min-width: 320px;
+
+  }
 }
