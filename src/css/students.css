@@ -12,38 +12,42 @@
 }
 
 .feedback-description {
+    display: block;
+    width: 335px;
     font-size: 14px;
-    text-align: center;
-    font-weight: 400;
     line-height: 24px;
-    margin-bottom: 40px;
+    text-align: center;
+    margin: 0 auto 40px;
 }
 
 .feedbacks-scroll {
     display: flex;
     overflow-x: auto;
-
+    scrollbar-width: none;
 }
 
 .feedbacks-list {
     display: flex;
     flex-direction: row;
+    gap: 32px;
 }
 
 .feedback-card {
-    padding: 20px;
-    min-width: 335px;
+    width: 335px;
+    height: 278px;
+    font-size: 14px;
+    flex-shrink: 0;
+    background-color: #F3F5F6;
+    border-radius: 16px;
 }
 
 .feedback-student-header {
     display: flex;
-    gap: 4px;
     align-items: center;
-    margin-bottom: 16px;
     background: var(--green);
-    padding: 14px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 20px;
+    border: 0px;
+    border-radius: 8px;
 }
 
 .student-name {
@@ -54,6 +58,12 @@
     line-height: 24px;
 }
 
+.student-avatar {
+    margin: 14px;
+    margin-right: 8px;
+}
+
+
 .student-role {
     font-size: 12px;
     font-weight: 400;
@@ -62,8 +72,71 @@
 }
 
 .feedback-text {
+    width: 267px;
+    margin: 0 auto;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .feedback-card {
+        width: 336px;
+        height: 326px;
+        border-radius: 30px;
+
+    }
+
+    .feedback-student-header {
+        margin: 32px 16px;
+        border-radius: 15px;
+    }
+
+
+    .feedback-description {
+        width: 647px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .feedback-text {
+        width: 272px;
+        height: 144px;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .feedback-student-header {
+        margin: 32px 16px;
+        border-radius: 15px;
+    }
+
+    .feedback-card {
+        width: 320px;
+        height: 326px;
+        border-radius: 30px;
+    }
+
+    .feedback-description {
+        width: 647px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .feedback-text {
+        width: 256px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+
 
 }
