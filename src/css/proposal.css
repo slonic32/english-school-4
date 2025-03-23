@@ -19,7 +19,6 @@
     max-width: 1152px;
     padding: 64px;
     padding-bottom: 142px;
-    border-radius: 30px;
   }
 }
 
@@ -55,6 +54,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 64px 32px;
+    border-radius: 30px;
   }
 
   @media screen and (min-width: 1280px) {
