@@ -1,5 +1,4 @@
-.lessons {
-}
+.lessons {}
 
 @media screen and (min-width: 1280px) {
   .lessons .container {
@@ -111,7 +110,8 @@
 .lessons-plan-button:focus {
   background-color: #38ae5f;
 }
-/*
+
+
 .lessons-green {
   background-color: var(--green);
   color: var(--white);
@@ -127,26 +127,6 @@
 
 .lessons-green .lessons-plan-button:active,
 .lessons-green .lessons-plan-button:focus {
-  background-color: var(--white);
-  color: var(--green);
-}
-*/
-
-.lessons-plan:hover {
-  background-color: var(--green);
-  color: var(--white);
-}
-
-.lessons-plan:hover .base-grey-text {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.lessons-plan:hover .lessons-plan-button {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.lessons-plan:hover .lessons-plan-button:active,
-.lessons-plan:hover .lessons-plan-button:focus {
   background-color: var(--white);
   color: var(--green);
 }
