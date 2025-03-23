@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   const mobMenuLinks = document.querySelectorAll('.mob-menu-link');
 
-  console.log(mobMenuLinks);
   mobMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('is-opened');
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mobMenuCloseBtn.contains(event.target);
 
     if (!isInside) {
-      console.log('out');
       mobileMenu.classList.remove('is-opened');
       drop.classList.remove('is-opened');
       body.classList.remove('no-scroll');
