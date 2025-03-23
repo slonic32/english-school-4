@@ -202,8 +202,7 @@
   max-width: 255px;
   padding: 14px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: none;
   border-radius: 12px;
   background-color: var(--green);
