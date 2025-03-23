@@ -12,6 +12,7 @@
   @media screen and (min-width: 768px) {
     max-width: 704px;
     padding-bottom: 93px;
+    border-radius: 30px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -53,6 +54,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 64px 32px;
+    border-radius: 30px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -76,15 +78,19 @@
   transform: rotate(-9deg);
   border-radius: 16px;
   background: var(--light-green);
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .proposal-card-wrapper::after {
     max-width: 668px;
     max-height: 500px;
     transform: rotate(-9.864deg);
     border-radius: 30px;
   }
+}
 
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+  .proposal-card-wrapper::after {
     max-width: 1050px;
     max-height: 463px;
     transform: rotate(-8deg);
@@ -105,15 +111,19 @@
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.5);
   z-index: -2;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .proposal-card::before {
     max-width: 668px;
     max-height: 500px;
     transform: rotate(10.655deg);
     border-radius: 30px;
   }
+}
 
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+  .proposal-card::before {
     max-width: 1011px;
     max-height: 402px;
     transform: rotate(11deg);
@@ -194,8 +204,7 @@
   max-width: 255px;
   padding: 14px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: none;
   border-radius: 12px;
   background-color: var(--green);

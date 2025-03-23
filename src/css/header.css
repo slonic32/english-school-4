@@ -9,6 +9,7 @@
 }
 
 .page-header {
+  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,6 +39,7 @@
   padding-bottom: 5px;
   font-weight: 600;
   line-height: 1.28;
+  color: var(--black);
 }
 
 .page-nav-link::after {
