@@ -8,32 +8,31 @@ import 'swiper/css/pagination';
 const studentsSwiper = new Swiper('.feedbacks-scroll', {
   modules: [Pagination, Keyboard, Mousewheel, Navigation],
   loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
 
-  },
+
+
 
   breakpoints: {
     320: {
       speed: 500,
       slidesPerView: 1,
       slidesPerGroup: 1,
+      spaceBetween: 32,
     },
 
     768: {
       speed: 500,
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 32,
+
 
     },
-    1158: {
+    1280: {
       speed: 500,
       slidesPerView: 3,
-      slidesPerGroup: 3,
-
-
+      slidesPerGroup: 1,
+      spaceBetween: 32,
     }
   }
 })
