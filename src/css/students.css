@@ -1,142 +1,142 @@
 .section-students {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .feedback-title {
-    margin-bottom: 16px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 36px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
 
 }
 
 .feedback-description {
-    display: block;
-    width: 335px;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    margin: 0 auto 40px;
+  display: block;
+  width: 335px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto 40px;
 }
 
 .feedbacks-scroll {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .feedbacks-list {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
+  display: flex;
+  flex-direction: row;
+  /* gap: 32px; */
 }
 
 .feedback-card {
-    width: 335px;
-    height: 278px;
-    font-size: 14px;
-    flex-shrink: 0;
-    background-color: #F3F5F6;
-    border-radius: 16px;
+  width: 335px;
+  height: 278px;
+  font-size: 14px;
+  /* flex-shrink: 0; */
+  background-color: #F3F5F6;
+  border-radius: 16px;
 }
 
 .feedback-student-header {
-    display: flex;
-    align-items: center;
-    background: var(--green);
-    margin: 20px;
-    border: 0px;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: var(--green);
+  margin: 20px;
+  border: 0px;
+  border-radius: 8px;
 }
 
 .student-name {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: -0.4px;
-    line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.4px;
+  line-height: 24px;
 }
 
 .student-avatar {
-    margin: 14px;
-    margin-right: 8px;
+  margin: 14px;
+  margin-right: 8px;
 }
 
 
 .student-role {
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 16px;
 }
 
 .feedback-text {
-    width: 267px;
-    margin: 0 auto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+  width: 267px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 
 }
 
 @media screen and (min-width: 768px) {
-    .feedback-card {
-        width: 336px;
-        height: 326px;
-        border-radius: 30px;
+  .feedback-card {
+    width: 336px;
+    height: 326px;
+    border-radius: 30px;
 
-    }
+  }
 
-    .feedback-student-header {
-        margin: 32px 16px;
-        border-radius: 15px;
-    }
+  .feedback-student-header {
+    margin: 32px 16px;
+    border-radius: 15px;
+  }
 
 
-    .feedback-description {
-        width: 647px;
-        font-size: 18px;
-        line-height: 30px;
-    }
+  .feedback-description {
+    width: 647px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-    .feedback-text {
-        width: 272px;
-        height: 144px;
-        font-size: 16px;
-        line-height: 24px;
+  .feedback-text {
+    width: 272px;
+    height: 144px;
+    font-size: 16px;
+    line-height: 24px;
 
-    }
+  }
 
 }
 
 @media screen and (min-width: 1280px) {
 
-    .feedback-student-header {
-        margin: 32px 16px;
-        border-radius: 15px;
-    }
+  .feedback-student-header {
+    margin: 32px 16px;
+    border-radius: 15px;
+  }
 
-    .feedback-card {
-        width: 320px;
-        height: 326px;
-        border-radius: 30px;
-    }
+  .feedback-card {
+    width: 320px;
+    height: 326px;
+    border-radius: 30px;
+  }
 
-    .feedback-description {
-        width: 647px;
-        font-size: 18px;
-        line-height: 30px;
-    }
+  .feedback-description {
+    width: 647px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-    .feedback-text {
-        width: 256px;
-        margin: 0 auto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
+  .feedback-text {
+    width: 256px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 
-    }
+  }
 
 
 }
