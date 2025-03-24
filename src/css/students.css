@@ -90,7 +90,7 @@
         background-color: #F3F5F6;
         border-radius: 16px;
     }
-    
+
     .feedback-student-header {
         display: flex;
         align-items: center;
@@ -99,7 +99,7 @@
         border: 0px;
         border-radius: 8px;
     }
-    
+
 
     .feedback-description {
         display: block;
@@ -109,16 +109,16 @@
         text-align: center;
         margin: 0 auto 40px;
     }
-    
+
     .feedback-text {
         width: 267px;
         margin: 0 auto;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
-    
+
     }
-    
+
 }
 
 @media screen and (min-width: 768px) {
