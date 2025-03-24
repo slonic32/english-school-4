@@ -49,8 +49,14 @@
 .teacher-list {
   display: flex;
   flex-wrap: wrap;
-  width: 335px;
+  width: 100%;
   row-gap: 40px;
+}
+
+@media screen and (min-width: 375px) {
+  .teacher-list {
+    width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -70,7 +76,13 @@
 }
 
 .teacher-item {
-  width: 335px;
+  width: 100%;
+}
+
+@media screen and (min-width: 375px) {
+  .teacher-item {
+    width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) {
