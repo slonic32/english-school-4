@@ -284,5 +284,7 @@
 }
 
 .form-terms .break {
-    display: block;
+    @media screen and (min-width: 375px) {
+        display: block;
+    }
 }
